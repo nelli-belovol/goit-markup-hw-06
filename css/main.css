@@ -197,6 +197,7 @@ span {
 
 .dark-bg {
   display: flex;
+  justify-content: space-between;
   background-color: var(--dark-bg-cl);
   line-height: 1.7;
 }
@@ -309,8 +310,9 @@ span {
   margin: 12px 40px 40px 40px;
 }
 
-.box-input {
+.form-field {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .form-label {
@@ -331,9 +333,9 @@ span {
 .form-icons {
   position: absolute;
   display: inline-block;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+  transform: translateY();
 }
 
 .form-input:hover ~ .form-icons {
@@ -552,8 +554,8 @@ h2 {
   fill: currentColor;
 }
 
-footer li {
-  color: rgba(255, 255, 255, 0.6);
+footer link {
+  color: var(--footer-link-cl);
 }
 
 footer .logo {
@@ -589,6 +591,7 @@ footer .logo {
 .footer-conctacts {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .link:hover,
@@ -603,7 +606,7 @@ footer .logo {
 .title-join {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-cl);
@@ -770,4 +773,67 @@ footer .logo {
 
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.title-mailling {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-cl);
+  margin-bottom: 20px;
+}
+
+.box-input {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-mailling {
+  display: inline-block;
+  width: 358px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(--footer-link-cl);
+  background-color: var(--dark-bg-cl);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  margin: 0;
+  padding-left: 16px;
+}
+
+.input-mailling:not(:placeholder-shown) {
+  color: var(--main-cl);
+}
+
+.btn-mailling {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  background-color: var(--accent-cl);
+  color: var(--main-cl);
+  box-shadow: 0px 4px 4px rgba(146, 104, 104, 0.15);
+  border-radius: 4px;
+
+  padding: 10px 28px 10px 29px;
+  margin-left: 12px;
+}
+
+.mailling-icon {
+  display: block;
+  fill: var(--main-cl);
+  margin-left: 10px;
 }
