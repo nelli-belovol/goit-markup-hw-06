@@ -405,9 +405,14 @@ span {
   border-radius: 4px;
 }
 
+.checkbox-filed {
+  position: relative;
+}
+
 .checkbox-label {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
 }
 
 .checkbox-label::before {
@@ -421,13 +426,17 @@ span {
 }
 
 .checkbox:checked + .checkbox-label::before {
-  background-image: url(/images/icon-vector-checkbox.svg);
+  background-image: url(../images/icon-vector-checkbox.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-color: var(--accent-cl);
   border-color: var(--accent-cl);
   margin-right: 8px;
+}
+
+.checkbox:focus + .checkbox-label::before {
+  border: 1px solid var(--accent-cl);
 }
 
 .agreement {

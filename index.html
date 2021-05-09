@@ -63,7 +63,7 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="form">   
+          <div class="form">   
                      
             <div class="form-field">
               <label class="form-label" for="name">Имя</label>
@@ -94,19 +94,19 @@
               <textarea class="comment" name="comment" id="comment" rows="4" placeholder="Введите текст" required></textarea>
             </div>
             
-    
-              <input 
+          <div class="checkbox-filed">
+            <input 
               type="checkbox" 
               name="agreement" 
               id="agreement" 
               class="checkbox visually-hidden" 
               required>
-              <label 
+            <label 
               for="agreement"
               class="checkbox-label">Соглашаюсь с рассылкой и принимаю 
               <a class="agreement" href="#">Условия договора</a>
             </label>
-            
+          </div>
 
             <button class="button" type="submit">Отправить</button>
           </form>
