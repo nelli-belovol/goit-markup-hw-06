@@ -357,6 +357,7 @@ span {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
+
 .comment {
   display: block;
   width: 100%;
@@ -427,6 +428,7 @@ span {
   border: 1px solid var(--icon-color);
   border-radius: 3px;
   margin-right: 8px;
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .checkbox-label::before {
@@ -447,7 +449,7 @@ span {
   color: var(--accent-cl);
 }
 
-.form > .button {
+.form .button {
   margin-top: 30px;
 }
 
