@@ -405,7 +405,7 @@ span {
   border-radius: 4px;
 }
 
-.checkbox-filed {
+.checkbox-field {
   position: relative;
 }
 
@@ -853,6 +853,7 @@ footer .logo {
   justify-content: flex-end;
   width: 570px;
 }
+
 .input-mailling {
   display: inline-block;
   width: 358px;
@@ -860,7 +861,7 @@ footer .logo {
   line-height: 1.25;
   align-items: center;
   letter-spacing: 0.03em;
-  color: rgba(--footer-link-cl);
+  color: var(--footer-link-cl);
   background-color: var(--dark-bg-cl);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -868,6 +869,7 @@ footer .logo {
   margin: 0;
   padding-left: 16px;
 }
+
 .input-mailling:-webkit-autofill,
 .input-mailling:-webkit-autofill:hover,
 .input-mailling:-webkit-autofill:focus {
