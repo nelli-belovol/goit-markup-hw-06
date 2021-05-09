@@ -383,13 +383,17 @@ span {
 }
 
 .form-input:focus,
-.comment:focus {
+.comment:focus,
+.form-input:hover,
+.comment:hover {
   outline-style: none;
   border: 1px solid var(--accent-cl);
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.form-field:focus-within {
+.form-field:focus-within,
+.form-field:hover {
   fill: var(--accent-cl);
 }
 
